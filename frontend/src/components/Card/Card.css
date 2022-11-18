@@ -1,0 +1,203 @@
+.card {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    /* width: 44.72%;
+    min-width: 330px;
+    aspect-ratio: 644/435; */
+    width: 644px;
+    height: 435px;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+}
+
+.card .left {
+    width: 154px;
+    height: 100%;
+    background: url(./car.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 490px;
+    height: 100%;
+}
+
+.right .right-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 8px;
+    width: 490px;
+    height: 384px;
+    padding-left: 30px;
+}
+
+.right-top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 54px;
+    padding: 20px 20px 0 0;
+}
+
+.brand-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+
+    width: 135px;
+    height: 34px;
+
+    background: #2F5BEA;
+    border-radius: 10px;
+}
+
+.brand-inner {
+    width: 111px;
+    height: 18px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+.title-date {
+    width: 85px;
+    height: 25px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    color: #2F5BEA;
+}
+
+.title-name {
+    height: 41px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 41px;
+    /* identical to box height */
+
+    letter-spacing: 0.7px;
+
+    color: #1F2126;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+    width: 409px;
+    height: 66px;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.desc-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: auto;
+    height: 50px;
+}
+
+
+.desc-block .block-title {
+    width: 100%;
+    height: 25px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height, or 208% */
+
+    text-transform: uppercase;
+
+    color: #74757C;
+}
+
+.block-content {
+    height: 25px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+
+
+    color: #1F2126;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 66px;
+}
+
+.car-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 81px;
+    height: 20px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0 24px 0;
+
+    color: #2F5BEA;
+}
+
+.arrow-container {
+    background: url(./arrow-link.svg);
+    margin-left: 4px;
+    width: 9px;
+    height: 10px;
+    background-size: cover;
+    background-position: center;
+}
