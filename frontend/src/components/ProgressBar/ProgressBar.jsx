@@ -7,7 +7,7 @@ export default function ProgressBar(props) {
 
     return (
         <div className='bar-container'>
-            <div className='progress' style={{'width': progress}} />
+            <div className='progress' style={{ 'width': progress }} />
         </div>
     )
 }

@@ -4,19 +4,20 @@ import ProgressBar from '../ProgressBar/ProgressBar'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+const url = 'http://localhost:8000/cars/';
+
 export default function Card() {
 
     const [car, setCar] = useState({});
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/cars/', {
+        axios.get(url, {
             headers: {
                 'Content-Type': 'application/json'
             }
         })
             .then(res => {
                 setCar(res.data[0]);
-                // console.log(res.data);
             })
             .catch(err => {
                 console.log(err);
@@ -47,7 +48,6 @@ export default function Card() {
     return (
         <div>
             {Object.keys(car).length > 0 && <div className='card-container'>
-                {console.log(Object.keys(car).length)}
                 <div className='card'>
                     <div className='left'></div>
                     <div className='right'>
@@ -94,12 +94,8 @@ export default function Card() {
                             </div>
                         </div>
                         <div className='bottom-bar'>
-                            <div className='days-left'>{getDaysLeft(car.date_listing_ends
-
-                            ) + ' days left'}</div>
-                            <ProgressBar progress={getDaysLeft(car.date_listing_ends) * 100 / getDaysBetween(car.date_of_listing, car.date_listing_ends
-
-                            ) + '%'} />
+                            <div className='days-left'>{getDaysLeft(car.date_listing_ends) + ' days left'}</div>
+                            <ProgressBar progress={getDaysLeft(car.date_listing_ends) * 100 / getDaysBetween(car.date_of_listing, car.date_listing_ends) + '%'} />
                         </div>
                     </div>
                 </div>
