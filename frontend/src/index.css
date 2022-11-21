@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: scroll;
-}
-
 :root {
     background-color: #F7F7F7;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans'), url(./fonts/DMSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora'), url(./fonts/Lora-Regular.ttf) format('truetype');
 }
